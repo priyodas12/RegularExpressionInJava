@@ -10,8 +10,9 @@ public class StringSplit {
     public static void main(String[] args) {
 
         //use regex from above list accordingly;
+        Pattern pattern=Pattern.compile(regx1);
 
-        String [] output="In fo sys".split(regx1);
+        String [] output= pattern.split("in fo sys limited");
 
         Arrays.asList(output).forEach(System.out::println);
 
