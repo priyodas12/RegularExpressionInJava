@@ -6,18 +6,22 @@ import java.util.regex.Pattern;
 
 public class StringSplit {
     public static String regx1="\\s";
+    public static String regx2="\\.";
 
     public static void main(String[] args) {
 
         //use regex from above list accordingly;
-        Pattern pattern=Pattern.compile(regx1);
+        Pattern pattern1=Pattern.compile(regx1);
+        Pattern pattern2=Pattern.compile(regx2);
 
-        String [] output= pattern.split("in fo sys limited");
 
-        Arrays.asList(output).forEach(System.out::println);
+        String [] output1= pattern1.split("in fo sys limited");
+        String [] output2= pattern2.split("www.infosys.in");
+
+        Arrays.asList(output1).forEach(System.out::println);
 
         //or
 
-        Arrays.stream(output).forEach(System.out::println);
+        Arrays.stream(output2).forEach(System.out::println);
     }
 }
