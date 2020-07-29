@@ -15,6 +15,7 @@ public class RegExImplOne {
         int countOfRegEx=0;
 
         //which regular expression we are searching pattern
+        //static factory method
         Pattern pattern=Pattern.compile(findRegexString);
 
         //target String
@@ -26,6 +27,6 @@ public class RegExImplOne {
             System.out.println("starts at "+matcher.start()+"..ends "+matcher.end()+"..group "+matcher.group());
         }
 
-        System.out.println("'"+findRegexString+"' presents  "+countOfRegEx+ " times in "+targetString);
+        System.out.println("total '"+findRegexString+"' presents  "+countOfRegEx+ " times in "+targetString);
     }
 }
