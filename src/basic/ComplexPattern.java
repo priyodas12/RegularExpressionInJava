@@ -1,7 +1,11 @@
 package basic;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /*
+* character classes::
 * [abc] ->          either a or bor c;
 * [^abc] ->         neither a or b or c;
 * [a-z] ->          any lower case alphabet
@@ -15,11 +19,12 @@ import java.util.Scanner;
 public class ComplexPattern {
     public static void main(String[] args) {
 
-        Scanner scn=new Scanner(System.in);
-        System.out.println("Enter target string:::");
-        String targetString=scn.next();
-        System.out.println("Enter regex string:::");
-        String findRegexString=scn.next();
+      Pattern pattern= Pattern.compile("x");
+      Matcher matcher=pattern.matcher("ab#0Z");
+      
+      while(matcher.find()){
+          System.out.println(matcher.start()+"..."+matcher.end());
+      }
 
 
     }
