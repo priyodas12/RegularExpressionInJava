@@ -17,13 +17,24 @@ import java.util.regex.Pattern;
 *
 */
 public class ComplexPattern {
+
+    public static String regx1="[abc]";
+    public static String regx2="[^abc]";
+    public static String regx3="[A-Z]";
+    public static String regx4="[a-z]";
+    public static String regx5="[a-zA-Z]";
+    public static String regx6="[0-9]";
+    public static String regx7="[a-zA-Z0-9]";
+    public static String regx8="[^a-zA-Z0-9]";
+
     public static void main(String[] args) {
 
-      Pattern pattern= Pattern.compile("x");
-      Matcher matcher=pattern.matcher("ab#0Z");
+
+      Pattern pattern= Pattern.compile(regx8);
+      Matcher matcher=pattern.matcher("a#02ZcBi4Klb");
       
       while(matcher.find()){
-          System.out.println(matcher.start()+"..."+matcher.end());
+          System.out.println(matcher.start()+"..."+matcher.group());
       }
 
 
