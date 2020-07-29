@@ -25,7 +25,7 @@ public class PredefinedCharacter {
 
     public static void main(String[] args) {
 
-
+        //use regex from above list accordingly;
         Pattern pattern= Pattern.compile(regx6);
         Matcher matcher=pattern.matcher("a#02Zc Bi4K &lb");
 

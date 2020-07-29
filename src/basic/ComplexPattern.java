@@ -29,14 +29,12 @@ public class ComplexPattern {
 
     public static void main(String[] args) {
 
-
-      Pattern pattern= Pattern.compile(regx8);
-      Matcher matcher=pattern.matcher("a#02ZcBi4K&lb");
+        //use regex from above list accordingly;
+        Pattern pattern= Pattern.compile(regx8);
+        Matcher matcher=pattern.matcher("a#02ZcBi4K&lb");
       
-      while(matcher.find()){
-          System.out.println(matcher.start()+"..."+matcher.group());
-      }
-
-
+          while(matcher.find()){
+              System.out.println(matcher.start()+"..."+matcher.group());
+          }
     }
 }
