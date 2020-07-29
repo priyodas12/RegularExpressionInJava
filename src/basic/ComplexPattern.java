@@ -31,7 +31,7 @@ public class ComplexPattern {
 
 
       Pattern pattern= Pattern.compile(regx8);
-      Matcher matcher=pattern.matcher("a#02ZcBi4Klb");
+      Matcher matcher=pattern.matcher("a#02ZcBi4K&lb");
       
       while(matcher.find()){
           System.out.println(matcher.start()+"..."+matcher.group());
