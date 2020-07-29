@@ -23,6 +23,7 @@ public class RegExImplOne {
         //
         while(matcher.find()){
             countOfRegEx++;
+            System.out.println("starts at "+matcher.start()+"..ends "+matcher.end()+"..group "+matcher.group());
         }
 
         System.out.println("'"+findRegexString+"' presents  "+countOfRegEx+ " times in "+targetString);
